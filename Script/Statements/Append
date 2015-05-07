@@ -1,0 +1,32 @@
+[append {EXPRESSION}]
+[+{EXPRESSION}]
+
+If you are writing a function that builds a longer text you can use a series of [[append]] statements to pass the combined result as return value.
+In contrast to %return% this statement does not stop following script lines from being executed.
+Note: A %return% statement with an %expression% will only pass that value to the calling code. If there is an accumulated value from [[append]] statements, it is discarded.
+
+[function {count2ten}
+	do
+		for {i} from {1} to {10}
+			if {i > 1}
+				append {", "}
+			append {i}]
+
+If this function is called it will return the %string% [[{"1, 2, 3, 4, 5, 6, 7, 8, 9, 10"}]].
+
+!String expressions
+Another use of [[append]] is to add an expression value to a %string% expression:
+
+[say {"Random numbers:\n}\[for {i} from {1} to {30}\]{Number }\[+i\]{ is: }\[append random number between {1} and {100}\]{\n}\[end\]"]
+
+Both [[{i}]] and [[random number between {1} and {100}]] are expressions that are added to the string using append. The output will then look \
+like this:
+
+[Random numbers:
+Number 1 is: 71
+Number 2 is: 95
+Number 3 is: 7
+Number 4 is: 96
+Number 5 is: 73
+...]
+Note: Your output might look a little different as the numbers are [[random]]. ;)

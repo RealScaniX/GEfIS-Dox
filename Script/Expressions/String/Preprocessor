@@ -1,0 +1,23 @@
+xxxSome simple constructs are processed and replaced by a more complex %string% before the actual parsing takes place to speed the process up a bit. They can only be used in %strings% \
+and exist to make writing some html parts easier and keep the code more readable.
+Note: This happens before anything else, so you will not be able to use any expressions that need evaluation inside of one of those.
+
+!Link
+[\[link {LINK}\]{CONTENTS}\[/link\]]
+
+!Image
+[\[img {image}\]
+
+!A|an
+[\[a|an\]]
+
+
+!Quoted values
+Instead of using the backslash to quote some values you can also use these phrases:
+<ul><li>["\[line break\]"]
+Is the same as [["\n"]]
+</li><li>["\[bracket\]"]
+Is the same as [["\\["]]
+</li><li>["\[close bracket\]"]
+Is the same as [["\\]"]]
+</li></ul>

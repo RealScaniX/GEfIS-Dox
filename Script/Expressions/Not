@@ -1,0 +1,4 @@
+[not {BOOL_EXPRESSION}]
+[!{BOOL_EXPRESSION}]
+
+Negates a boolean expression.

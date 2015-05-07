@@ -1,0 +1,10 @@
+[[index of]] returns the index of an element in a %list% starting with [[0]] for the first element and ending with [[length-1]] for the last element.
+
+[now {mylist} is a new list
+add {"first"} to {mylist}
+add {"second"} to {mylist}
+add {"third"} to {mylist}
+add {"fourth"} to {mylist}
+say {"The index of \"second\" in the list is: "} + key of {"certain death"} in {mymap} + {"."}]
+
+<b>Will output: </b>The index of "second" in the list is 1.

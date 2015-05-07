@@ -1,0 +1,11 @@
+xxxSome macros are defined to insert some HTML constructs that would otherwise mean more work to add.
+
+!Bar
+[\<htmlbar "{TITLE}" {VALUE}/{MAXIMUM}\>]
+
+
+!Link
+[\<link {LINK}>{CONTENTS}\</link\>]
+Other than the link shortcut in the preprocessor you can use evaluatable values here:
+[now {link} is {"open door"}
+say {"You can \<link \[+link\]\>open the door\</link\> to see what's inside."}]

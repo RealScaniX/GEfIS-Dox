@@ -1,0 +1,13 @@
+xxx!Function calls in script
+Let's say you want to define a function to say something dynamic:
+
+[function {sayhealth}
+	do
+		say {"You are }\[if {player.health > 0}\]{fine}\[else\]{dead}\[end\]{."}]
+
+You can then use this function in your code like this:
+
+[say {"Your general status is:"}
+sayhealth]
+
+To see how to use functions as an expression please see %Expressions/function call% under "Expressions"!

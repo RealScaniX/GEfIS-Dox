@@ -1,0 +1,13 @@
+Roundtrips to the client and back do not work inside of evaluations. A roundtrip is usually triggered by a %wait%, %flush% or mode change (%start mode%, %end mode% and %switch mode%).
+An evaluation happens whenever an %expression% is resolved.
+
+The following example wouldn't work as expected:
+[say {"Please enter a number!}\[ask for number\]{\nYou entered: }\[+{user.input}\]]{"}
+
+This will immediately output "Please enter a number!" <b>and</b> "You entered: " and will <b>afterwards</b> wait for a user input.
+
+To achieve the desired effect, the expression needs to be divided into say and other statements:
+[say {"Please enter a number!"}
+ask for number
+say {"You entered: }\[+{user.input}\]]{"}
+

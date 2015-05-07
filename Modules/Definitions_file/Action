@@ -1,0 +1,2 @@
+The action is defined in the same way as a %function%. It only differs in an additional restriction to specific %modes%.
+Other than a %function%, an %action% can be directly invoked by a player through entering a matching phrase.

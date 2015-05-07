@@ -1,0 +1,10 @@
+[[key of]] returns the key that an element is stored under in a %map%.
+
+[now {mymap} is a new map
+now {mymap.north} is {"desert"}
+now {mymap.south} is {"coast"}
+now {mymap.east} is {"certain death"}
+now {mymap.west} is {"city"}
+say {"The certain death awaits you in the "} + key of {"certain death"} in {mymap} + {"."}]
+
+<b>Will output: </b>The certain death awaits you in the east.

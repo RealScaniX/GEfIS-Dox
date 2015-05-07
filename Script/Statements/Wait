@@ -1,0 +1,4 @@
+!Wait
+[wait ((for {N} seconds))]
+
+Waits until the user presses any key or (if given) [[{N}]] seconds went by, whatever comes first.

@@ -1,0 +1,8 @@
+xxx!Reference modifier
+You can assign an expression to an entity or variable by reference so it is evaluated when accessed.
+The most common usecase for this this is a dynamic value of an entity.
+
+[entity door is an entity
+	attributes
+		bool open
+		text @"[doordescr

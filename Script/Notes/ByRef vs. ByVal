@@ -1,0 +1,39 @@
+[[ByRef]] is the passing of a variable through its reference empowering the receiving code to directly modify the original while [[ByVal]] denotes the passing of a variable \
+through a copy of its value.
+
+!Example for ByRef
+In Gefis all entities are passed by reference, so you can modify the passed entity in nested functions.
+
+[Entity {ListHolder} is an {Entity}
+	attributes
+		list {stuff}
+
+function {addHello}
+	understand
+		{addHello }\[{lh}\]
+	do
+		add {"Hello"} to {lh.stuff}
+
+// Some code from any possible code block
+now {lh} is a new {ListHolder}
+addHello {lh}
+add {"world"} to {lh.stuff}
+say {"Now the listholder has }\[+{lh.stuff.#}\]{ items."}]
+
+<b>Will output: </b>Now the listholder has 2 items.
+
+!Example for ByVal
+Primitive values like %lists%, %maps%, %texts% and %numbers% are passed as a copy and cannot be used to modify the original.
+ 
+[now {lh} is a new {ListHolder}
+now {lst} is {lh.stuff}
+addHello {lst}
+add {"world"} to {lst}
+say {"Now the listholder has }\[+{lh.stuff.#}\]{ items."}
+say {"Now the list has }\[+{lst.#}\]{ items."}]
+
+<b>Will output: </b>Now the listholder has 0 items.
+Now the list has 1 items.
+
+As you can see the [[{lst]]} has only been modified by direct calls and not by the invoked function. Also the %list% in the [[{lh}]] entity hasn't been modified at all, \
+because [[{lst}]] only holds a copy of the %list%.

@@ -1,0 +1,11 @@
+A [[Phrase]] is a pretty normal %entity% with one exception:
+When matching against other entities it will match if it has the same name.
+Usually a Phrase is produced when the player enters something that cannot be directly resolved to an entity in the pool. By doing so, the game author has the option to resolve it \
+himself.
+
+[now {a} is a new {Item} called {Strawberry}
+now {b} is a new {Phrase} called {Strawberry}
+
+say {"a and b are }\[if {a} is {b}\]{equal}\[else\]{not equal}\[end\]{."}]
+
+<b>Will output: </b>a and b are equal.

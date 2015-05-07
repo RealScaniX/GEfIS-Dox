@@ -1,0 +1,13 @@
+[There is a {ValueSponge} called {Globals}
+	its {MusicVolume} is {100}
+	its {SoundVolume} is {100}]
+
+The [[ValueSponge]] EntityType is a special type for an %Entity% that allows arbitrary attributes.
+
+As I decided against having global variables I added this type to still be able to have a dynamic list of values which still does not collide with other variable or entity names.
+
+You can resolve any attribute name on a [[ValueSponge]] whether it exists (value will be != [[null]]) or not (value will be [[null]]).
+
+Setting an attribute to [[null]] will effectively remove it from the %entity%.
+
+There also is no type safety on a [[ValueSponge]], so you can set an attribute to a number first and then to a text value afterwards without a problem (at least technically).

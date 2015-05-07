@@ -1,0 +1,19 @@
+[if {EXPRESSION}
+   ...
+else if {EXPRESSION}
+   ...
+else if {EXPRESSION}
+   ...
+else
+   ...]
+
+[if {EXPRESSION}
+   ...
+otherwise if {EXPRESSION}
+   ...
+otherwise if {EXPRESSION}
+   ...
+otherwise
+   ...]
+
+[[If]] blocks are defined as known from pretty much any other language. [[Otherwise]] and [[else]] are synonyms for each other and can even be mixed in the same [[if]] block.

@@ -1,0 +1,10 @@
+!Entity "User"
+The predefined entity [[User]] is available at any time and provides these attributes:
+
+<ul><li>[text {"input"}]
+The most recent user input. Other than the parameters of the current action this one contains the whole command the user typed in.
+</li><li>[bool {"canceled"}]
+[[True]] if the user pressed escape during the most recent %ask% or %wait% request.
+</li><li>[number {"actions"}]
+The number of actions the user has performed in this game session.
+</li></ul>

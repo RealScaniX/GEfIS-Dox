@@ -1,0 +1,6 @@
+!Sleep
+[sleep for {N} seconds]
+
+Sleeps until [[{N}]] seconds are over. The client is blocked and the user cannot skip this by pressing a key.
+Note: During sleep there will be no updates to the client. If you need to send text from recent %say% statements or other updates to the client you have to use %flush% \
+before sleeping.

@@ -1,0 +1,42 @@
+!While & Until
+[while {EXPRESSION}
+	...]
+
+[until {EXPRESSION}
+	...]
+Note: Pretty much the same as [[while]] with a negated expression, but might lead to a more readable code.
+
+For a loop that runs until or as long as an [[{EXPRESSION}]] is true you can use one of those.
+note: After a maximum of 1000 repetitions the loop is exited to avoid endless loops.
+
+!For
+[for {VARIABLE} from {START} to {END} ((step {INCREMENT}))
+	...]
+
+The classic loop with a single local variable that runs from one numerical value to another can be achieved with this.
+At the beginning the local variable with the name [[{VARIABLE}]] will be initialized with the numeric value [[{START}]] \
+and will be incremented after each iteration by the numeric value [[{INCREMENT}]] which will be [[1]] if omitted. The loop will run as long as \
+[[{VARIABLE} <= {END}]].
+
+!For each
+[for each {VALVAR} ((<= {KEYVAR})) in {OBJECT}
+	...]
+
+To iterate over a %list%, %map% or %entity% you should use the [[for each]] loop.
+The local variables [[{VALVAR}]] and (if given) [[{KEYVAR}]] will contain the value and key of the current entry.
+The behaviour depends on the type of [[{OBJECT}]]:
+<ul><li>%List%
+	Runs over all entries in a list.
+	[[{VALVAR}]] the value of the entry.
+	[[{KEYVAR}]] the index of the entry ([[0]] to [[length-1]]).
+</li><li>%Map%
+	Runs over all entries in a map.
+	[[{VALVAR}]] the value of the entry.
+	[[{KEYVAR}]] the key of the entry.
+</li><li>%Entity%
+	Runs over all attributes in an entity. This is usually only useful for debugging purposes.
+	[[{VALVAR}]] the value of the attribute.
+	[[{KEYVAR}]] the name of the attribute.
+</li></ul>
+note: A snapshot of the list of keys is taken before processing the loop, so new elements added inside of the loop aren't processed. \
+At the same time a removed value will still be processed as [[null]] value.

@@ -1,0 +1,19 @@
+xxx<div style="border:2px solid red;padding:12px;">This information is outdated. You now can use function names directly in an expression.</div>
+
+!Function calls as expressions
+If you want to call a %function% inside of an expression you can do so by enclosing it in square brackets ([[\[]] and [[\]]]).
+Let's say you have defined a function [[isalive]] like this:
+
+[function {isalive}
+	do
+		return {player.health > 0}]
+
+And you want to use it in an %if% statement:
+
+[if {\[isalive\]}
+	say {"Yeah, you are still alive!"}
+else
+	say {"Game over!"}]
+
+To see how to use functions as a statement please see %Statements/function call% under "Statements"!
+

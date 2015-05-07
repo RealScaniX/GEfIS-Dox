@@ -1,0 +1,15 @@
+xxx%Functions% are defined by the game authors and can be used in a similar way than the built in statements.
+
+Normally you can just call them as a script line like any other. There are basically two types of %functions%: Functions with or without a return value.
+While you can still call a %function% with a return value just like that, it wouldn't make much sense as the return value would go to waste.
+At the same time you normally do not want to call a %function% without a return value inside of an expression as the value would always be [[null]].
+
+!Function definition
+[function {NAME}
+	((modes
+		{MODES}))
+	understand
+		{PATTERNS}
+	do
+		{SCRIPT}]
+note: Replace [[function]] with [[action]] to define a player %action% instead.

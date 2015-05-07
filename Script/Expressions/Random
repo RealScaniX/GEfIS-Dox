@@ -1,0 +1,15 @@
+Some things in games should appear randomly to break out of a repeating pattern. To do so you can use these expressions.
+
+!Random number generator
+[random number between {MIN} and {MAX}]
+
+This produces a [[number]] between [[{MIN}]] and [[{MAX}]] including those two. The number will be an [[integer]] if both of them have been [[integers]] and \
+will be a [[decimal]] otherwise.
+
+!Chance
+[chance of {PORTION} ((in {OPTIONS}))]
+
+This will return a [[bool]] that will be true if a random number between [[{1}]] and [[{OPTIONS}]] is smaller or equal [[{PORTION}]].
+A simple example would be to have [[{OPTIONS}]] marbles of which [[{PORTION}]] are blue and the rest white. If you blindly pick one of them you would have a \
+[[chance of {PORTION} in {OPTIONS}]] to get a blue one.
+If omitted [[{OPTIONS}]] will be [[{100}]] and so [[{PORTION}]] would effectively become a percentage.

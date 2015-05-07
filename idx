@@ -1,0 +1,28 @@
+<div style="text-align:center;"><img src="/img/gefis_logo.png"/></div>
+!The inspiration
+GEfIS - short for <b>G</b>ame <b>E</b>ngine <b>f</b>or <b>I</b>nteractive <b>S</b>tories - has been inspired by <a href="http://inform7.com/" target="_blank">Inform7</a> which I came across \
+while playing some of the pretty cool adventure games done with it.
+
+I've been a programmer for quite some time now and have seen a variety of programming languages like Basic on the C64, Visual Basic, C++, Scheme, Java, Beanshell, JavaScript, PHP, \
+RubyScript and probably some I have (intentionally) forgotten. Still I was fascinated when I saw how the scripts of the games looked like in Inform7, which is a different approach \
+to the subject, defining things in natural English sentences that even most non programmers could understand.
+
+As those adventure games or interactive fiction are mostly written by story authors that really makes a difference. I bet a lot of those stories wouldn't have been possible if \
+the authors would need to go through the learning process to be able to understand those weird expression syntax we programmers grew accustomed to.
+For a "normal" coder however the syntax of Inform7 is sometimes irritating though and some of it feels awkward.
+
+You will find a lot of expressions and statements that are similar or even exactly the same as in Inform7, but there is a lot that differs as well to make life easier for the authors trying to build \
+the game mechanisms.
+
+!Why doing an own engine then?
+I am often driven by finding out whether I can do something myself or not and I think this is the case here as well. I have to mention that this is still a hobby project and \
+GEfIS will not grow to the same scale of functionality that Inform7 has now.
+Still there are some things that I am trying to improve in my approach:
+<ul><li>Load/save across game versions
+Unfortunately Inform7 uses a save game system that is basically a diff of a memory snapshot between a clean version (game start) and the current state. Because of this there is \
+no easy way to load a save game into a new version of the game as the memory positions of stuff changed.
+I will have a save game file that should be applicable to newer versions of the game even if elements dropped out or new ones came in.
+</li><li>Compile time
+Inform7 takes a looooong time to compile a game and as there is no hot code replacement or incremental building you have to wait this whole time after every little change.
+As GEfIS is interpreting the script at runtime there is no compiling.
+</li></ul>

@@ -1,0 +1,38 @@
+!Description
+Overlays can be used to display additional text or images in an overlay over the text or other ui elements of the frontend.
+You can switch between the old and new contents which will result in a transition on the client.
+
+The [[{CONTENT}]] is any valid [[HTML]] content that can be displayed inline. You can use the %preprocessor% to shorten the text you \
+have to write to display images and links.
+
+The [[{NAME}]] has to be one of the existing three overlay names: [[NW]], [[NE]] and [[SE]]. The [[{NAME}]] of an overlay is an identifier and \
+does not have to be enclosed in quotation marks (").
+
+The [[{STYLE}]] can be one of the these:
+<ul><li>a predefined value
+[[{"default"}]]: resets the look to the one of the selected theme
+[[{"frameless"}]]: removes all borders and backgrounds so only the given contents are visible
+</li><li>an html color value
+[[{"#RRGGBB"}]], [[{"blue"}]], [[{rgba(r,g,b,a)}]], ...
+</li><li>a css style
+any valid style attribute value, e.g. [[{"border:2px solid green;padding:10px;"}]]
+</li></ul>
+
+!Show
+[show (({CONTENT} in)) overlay {NAME} ((with style {STYLE}))]
+
+If the overlay is visible at the moment it will be faded out.
+Then the content and style is changed. Afterwards the overlay is faded in (again).
+
+!Set
+[set (({CONTENT} in)) overlay {NAME} ((with style {STYLE}))]
+
+Very similar to [[show]] but does not change the visibility of the overlay, only changes the [[{CONTENT}]] and [[{STYLE}]].
+
+!Hide
+[hide (({CONTENT} in)) overlay {NAME} ((with style {STYLE}))]
+
+Hides the overlay with the name [[{NAME}]].
+Note: Why does the [[hide]] statement has a [[{CONTENT}]] and [[{STYLE}]]? Those are applied after the overlay has been hidden and can be used to preload images etc. \
+It really just is a convenience shortcut for having to write a [[hide]] and a [[set]] to achieve that effect.
+

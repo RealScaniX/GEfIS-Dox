@@ -1,0 +1,67 @@
+!Your own game!
+Adding a new game to the GEfIS site is a manual process for now, but might be automated in the future if there is a demand for it.
+For now you have to request a game folder by writing an email with a brief description of what you want to do to <a href="mailto:gefis@storymaze.net">\
+gefis@storymaze.net</a>.
+Before the game can be found on the website you have to at least upload a %game file% containing the name of the game you want to start.
+
+!Start a new game
+<ol><li>Get the downloader from below and start it
+</li><li>Create a game folder on your computer and link the uploader to it. You can start with this <a href="/downloads/HelloWorld.zip">Hello World</a> example if you like.
+</li><li>Click on the launch button once to open the game site in development mode. Copy the session id from the page and insert it into the uploader.
+</li><li>Edit the sources until you have a state that you want to try out. Then click on "upload to session".
+</li><li>Reload the browser window to see the changes.
+</li></ol>
+
+!Publish your game or changes
+When you first start the uploader you can only upload your game to your temporary session to test it.
+To make the game available to someone else, you have to register for a game directory on the server and deploy it there.
+You can register right from within the uploader with a name for the gamefolder (there can be more than one game in that folder later on) and your e-mail-address.
+Why the e-mail-address? Because I want a contact information in case there is an issue. That address will not appear anywhere on the page and will not be used \
+for notifications otherwise.
+
+!Development cycle
+These are the normal development steps if you want to contribute to a game as an author:
+<ol><li>Getting the game sources
+The first step is to download the files of the game which is most commonly done though something like <a href="http://www.github.com" target="_blank">GitHub</a> or \
+<a href="http://www.bitbucket.org" target="_blank">Bitbucket</a>. 
+There will also be a "download as zip" link in the development mode of the game.
+If you just want to start a new game, you can also do that using the uploader. Just register for a game directory and then upload a game. To make 
+</li><li>Understanding and modifying the sources
+Check out what code is there and add your ideas or improvements to it by using any simple text editor out there. I personally use notepad++ or netbeans to edit my game \
+files.
+</li><li>Testing out the changes
+The next step is to check out if your changes work out the way you planned. To do so you upload the game to your session and restart it or resume it from the last position.
+See development tools below for a download link of the uploader tool.
+</li><li>Publishing your changes
+If everything went fine and you are satisfied with the changes, you have to get them to the owner of the game. Normally you would push them to the remote repository and open \
+a pull request. Afterwards you have to wait for the owner to accept your changes.
+</li><li>Deploying the changes <i>(as the owner of the game)</i>
+If you are the owner of the game you can upload the updated version with the same tool used in point 3. It might be a good idea to test them again before deploying the new version.
+</li></ol>
+
+!Development tools
+These are the things to support development and debugging of games in GEfIS:
+
+<ul><li>GEfIS Uploader
+The uploader tool lets you upload your local changes to the game scripts to your session and test them. It also is used to deploy a new version of your game.
+It is done in java and should run on pretty much any real operating system.
+You can <a href="/downloads/uploader.zip">download the uploader tool here</a>.
+Note: The tool needs java to run and <a href="https://www.java.com/de/download/" target="_blank">java can be downloaded here</a>.
+</li><li>Development mode
+If you add "dev=true" as parameter to the game url (you can switch to development mode of your current session by clicking <a href="/?dev=true&restart=true" target="_blank">here</a>) the UI will \
+have additional elements:
+<ul><li>The DEV panel
+In the upper left corner there is a small green box labeled "DEV". Click on it to expand it. Inside you will see some technical information about the state you are currently in and \
+some helpful links. This also contains links to all of the game files.
+</li><li>Mode: Action
+If the button "action" is active, your input is processed in the way a normal input of a player would be processed.
+</li><li>Mode: Script
+If the button "script" is active, then your input is considered a line of script code and will be executed.
+This is very helpful if you want to modify values while testing a game like resetting a flag that has been set by a player action or cheating something into your inventory.
+</li><li>Mode: Expression
+You can use this mode to see the current value of an %expression% to check what an expression in a script or a player input would resolve to.
+</li><li>dump [[{EXPRESSION}]]
+To get more details about something, you can use the [[dump]] statement (this is not the same as the [[dump]] action defined in the test game, but a built in functionality of the \
+developer interaction mode). Using this you can get a detailed view on values of objects like an %entity% or %list%.
+</li></ul>
+</li></ul>

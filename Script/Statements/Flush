@@ -1,0 +1,5 @@
+!Flush
+[flush]
+
+Sends all accumulated client changes created by %say%, %overlay% or other similar statements to the client to update the display for the player.
+This is only necessary before you use a %sleep% or are going to do some long running operations.

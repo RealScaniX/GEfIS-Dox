@@ -1,0 +1,69 @@
+[{"..."}
+{"...\[SCRIPTLINE\]...\[SCRIPTLINE\]..."]}]
+
+A string can be a simple chain of letters, but can also contain nested %function calls% in square brackets ([[\[]] or [[\]]]).
+Let's have a look at a pretty common example, the nested [[one of]] script:
+
+[say {"The weather is }\[one of\]{fine}\[or\]{rainy}\[or\]{windy}\[or\]{nightmarish}\[at random\]{."}]
+
+In reality this constructs a script like this:
+
+[say {"The weather is "}
+one of
+	say {"fine"}
+or
+	say {"rainy"}
+or
+	say {"windy"}
+or
+	say {"nightmarish"}
+at random
+say {"."}]
+Note: Please ignore the fact that [[say]] would normally add a linefeed when the string ends with a punctuation mark. This does not happen here.
+
+!Nested expressions
+You can add expression values to the string by using %append% or just by string concatenation using the plus sign ([[+]]) like this:
+
+[{"Hello, "} + {player.charactername} + {"."}]
+
+!Special characters
+<ul><li>[[{\n}]]
+Adds a line break at this position.
+</li><li>[[{\t}]]
+Adds a tabulator at this position.
+</li><li>[[{\"}]]
+A quoted quotation mark. See below for an explanation!
+</li><li>[[{\\[}]]
+A quoted opening bracket for the rare case that really mean to say that.
+</li><li>[[{\\]}]]
+And the closing counterpart.
+</ul>
+
+!Special statements
+The following statements only work inside of a string.
+<ul><li>[[\[line break\]]]
+The same as [[{\n}]].
+</li><li>[[\[quotes\]]]
+The same as [[{\"}]].
+</li><li>[[\[bracket\]]]
+The same as [[{\\[}]].
+</li><li>[[\[close bracket\]]]
+The same as [[{\\]}]].
+</ul>
+
+!Escaping the quotes
+A quotation mark ([["]]) inside of a string has to be escaped like this:
+
+[say {"The drowning Goblin said \"Whargarbl!\", but unfortunately for him you're not familiar with the Goblin language."}]
+
+<b>Will output: </b>The drowning Goblin said <i>"Whargarbl!"</i>, but unfortunately for him you're not familiar with the Goblin language.
+
+!HTML quoting
+As the output is [[HTML]] you should escape the brackets ([[&lt;]] and [[&gt;]]) that normally are used to define [[HTML elements]]. \
+It normally suffices to quote the opening bracket.
+That said, you can still use [[HTML]] to style your output.
+Note: Although you won't have a problem in most cases when not quoting them, it makes the output more [[HTML]] conform and reduces unwanted side effects.
+
+[say {"To check if x is smaller than y you write: &lt;b>x \&lt; y&lt;/b>"}]
+
+<b>Will output: </b>To check if x is smaller than y you write: <b>x &lt; y</b>
