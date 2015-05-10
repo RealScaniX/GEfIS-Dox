@@ -1,0 +1,4 @@
+[story log on
+story log off]
+
+Turns the logging into "my story" temporarily off. It is automatically turned on again when the player enters the next action.

@@ -5,7 +5,7 @@ gefis@storymaze.net</a>.
 Before the game can be found on the website you have to at least upload a %game file% containing the name of the game you want to start.
 
 !Start a new game
-<ol><li>Get the downloader from below and start it
+<ol><li>Get the <a href="/downloads/uploader.zip">uploader tool</a> and start it (see below for more info).
 </li><li>Create a game folder on your computer and link the uploader to it. You can start with this <a href="/downloads/HelloWorld.zip">Hello World</a> example if you like.
 </li><li>Click on the launch button once to open the game site in development mode. Copy the session id from the page and insert it into the uploader.
 </li><li>Edit the sources until you have a state that you want to try out. Then click on "upload to session".
