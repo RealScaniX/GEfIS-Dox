@@ -1,12 +1,16 @@
 !Gefis
 The client uses the following third party libraries or extensions:
-<ul><li>jQuery v1.11.2 (c) 2005, 2014 jQuery Foundation, Inc. (<a href="http://www.jquery.org/license">license</a>)
+<ul><li>jQuery v1.11.2 (c) 2005, 2014 jQuery Foundation, Inc. (<a href="http://www.jquery.org/license" target="_blank">license</a>)
 </li><li>jQuery Cookie Plugin v1.4.1 Copyright 2006, 2014 Klaus Hartl (Released under the MIT license)
-</li><li>jQuery scrollbarWidth v0.2 Copyright (c) 2010 "Cowboy" Ben Alman  (<a href="http://benalman.com/about/license/">license</a>)
+</li><li>jQuery scrollbarWidth v0.2 Copyright (c) 2010 "Cowboy" Ben Alman  (<a href="http://benalman.com/about/license/" target="_blank">license</a>)
 </li></ul>
 
 !GEfIS One
 The game uses music by Kevin MacLeod.
 It also uses ambience tracks and sound effects by Alexander M. Loitsch originally done for the Iden soundtrack.
-
 (The exact track list will follow when the list is final)
+ 
+<b>Additional sound effects</b>
+<ul><li>A modified version of the "Grandfather clock ticks" by Daveincamas.
+The original version can be found on <a href="http://www.freesound.org/people/daveincamas/sounds/27077/" target="_blank">Freesound.org</a>.
+</li></ul>
