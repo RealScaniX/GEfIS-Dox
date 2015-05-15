@@ -5,6 +5,9 @@ The client uses the following third party libraries or extensions:
 </li><li>jQuery scrollbarWidth v0.2 Copyright (c) 2010 "Cowboy" Ben Alman  (<a href="http://benalman.com/about/license/" target="_blank">license</a>)
 </li></ul>
 
+!Warning spoilers
+The following passages might contain spoilers!
+
 !GEfIS One
 The game uses music by Kevin MacLeod.
 It also uses ambience tracks and sound effects by Alexander M. Loitsch originally done for the Iden soundtrack.
@@ -13,4 +16,6 @@ It also uses ambience tracks and sound effects by Alexander M. Loitsch originall
 <b>Additional sound effects</b>
 <ul><li>A modified version of the "Grandfather clock ticks" by Daveincamas.
 The original version can be found on <a href="http://www.freesound.org/people/daveincamas/sounds/27077/" target="_blank">Freesound.org</a>.
+</li><li>"vibrator 26.1.11" by Toiletrolltube.
+It can be found on <a href="https://www.freesound.org/people/toiletrolltube/sounds/181493/" target="_blank">Freesound.org</a>.
 </li></ul>

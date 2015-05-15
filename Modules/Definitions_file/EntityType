@@ -1,1 +1,24 @@
-xxx
+xxx[entity|a|an {NAME} is a|an {PARENTNAME}
+	(its|his {PARENTATTRIBUTENAME} is|are {NEWDEFAULTVALUE})
+	attributes
+		TYPE {ATTRIBUTENAME} (is {DEFAULTVALUE})
+]
+
+An entity type defines a list of properties that define a specific type of thing.
+For instance you can have a type called "thing" which does not have much but a name and a description. Then you can have a "ball" for which you might want to define additional \
+properties like its size and color. A corresponding definition would look like this:
+[A thing is an entity     // entity is the base type, you cannot have anything that is not an entity
+	attributes
+		text description is "Just a thing."		// we define a text property "description" with some default, "name" is already part of the base type "entity"
+
+A ball is a thing
+	its description is "It jumps, it rolls, it is a ball!"	// now all entities of this type have a new default description
+	attributes
+		text color		// the color as text "pretty dark pink" could be value
+		number size		// diameter in cm
+]
+
+!Attribute types
+An attribute can be another entity type or a so called primitive: %text%, %list%, %map%, %number% and %bool%.
+Depending on the type, the possible default values differ to match a valid value for the corresponding type.
+
