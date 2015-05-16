@@ -1,0 +1,7 @@
+xxx[numeric|float value of {EXPRESSION}
+int|integer value of {EXPRESSION}
+text|string value of {EXPRESSION}
+rounded value of {EXPRESSION}
+absolute value of {EXPRESSION}
+negative value of {EXPRESSION}]
+

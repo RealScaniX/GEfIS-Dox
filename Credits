@@ -5,8 +5,11 @@ The client uses the following third party libraries or extensions:
 </li><li>jQuery scrollbarWidth v0.2 Copyright (c) 2010 "Cowboy" Ben Alman  (<a href="http://benalman.com/about/license/" target="_blank">license</a>)
 </li></ul>
 
-!Warning spoilers
-The following passages might contain spoilers!
+
+<div style="border:2px solid red;padding:12px;"><b>Spoiler warning</b>
+ 
+The following passages might contain spoilers! Only read if you've already played the game.
+</div>
 
 !GEfIS One
 The game uses music by Kevin MacLeod.
@@ -18,4 +21,6 @@ It also uses ambience tracks and sound effects by Alexander M. Loitsch originall
 The original version can be found on <a href="http://www.freesound.org/people/daveincamas/sounds/27077/" target="_blank">Freesound.org</a>.
 </li><li>"vibrator 26.1.11" by Toiletrolltube.
 It can be found on <a href="https://www.freesound.org/people/toiletrolltube/sounds/181493/" target="_blank">Freesound.org</a>.
+</li><li>"Breaking Glass #1" by Agaxly.
+It can be found on <a href="https://www.freesound.org/people/Agaxly/sounds/233607/" target="_blank">Freesound.org</a>.
 </li></ul>
