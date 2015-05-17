@@ -1,0 +1,3 @@
+[debugSay {EXPRESSION}]
+
+This is very similar to the %say% statement, but the text will be printed in a slightly different way and is only visible in development mode.
