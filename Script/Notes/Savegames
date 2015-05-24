@@ -1,0 +1,9 @@
+!Changing defaults
+If you add an element to a list that is just the default value of an entity or are adding something to the items given to the player at game start in the [[when play begins]] \
+code block, then those will have no effect on existing save games.
+If you need to add something to an existing list, you should add an [[when play begins or resumes]] block and add the item if it is missing. You can also use a bool value in a \
+%ValueSponge% to check whether the fix has already been done.
+
+!References
+If you are changing a %reference% it will not be saved, so after the player loads the savegame, the entitiy will contain the original (default value or set through an init block \
+statement) again.

@@ -5,4 +5,4 @@ The most common usecase for this this is a dynamic value of an entity.
 [entity door is an entity
 	attributes
 		bool open
-		text @"[doordescr
+		text @"\[doordescr\]]

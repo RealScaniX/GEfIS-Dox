@@ -17,7 +17,11 @@ If your %say% text is ending with a period ([[.]]), but you don't want a line br
 !A|an
 [\[a|an\]]
 
-
+!Backspace
+[backspace]
+This is rarely used. It lets you remove the last character that has been printed. You can simulate someone typing and removing characters again with this.
+See the alternative ending of "One"! =P
+ 
 !Quoted values
 Instead of using the backslash to quote some values you can also use these phrases:
 <ul><li>["\[line break\]"]
