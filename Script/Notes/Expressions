@@ -1,0 +1,19 @@
+!Evaluation order
+Keep in mind that there is a limit to the cleverness of the engine as to how it evaluates the expressions you enter.
+e.g. the following expression can mean two things:
+[not {value1} is {value2}]
+ 
+1) you want to negate [[{value1}]] and then compare it to [[{value2}]].
+2) you want to check if [[{value1}]] is not [[{value2}]]
+ 
+Variant 1 only makes sense if [[{value1}]] is a boolean value, but the parser does not know the value of it at that time. [[{value1}]] could be a complex calculation or \
+function call that is evaluated later. The first thing the parser does is to recognize the whole thing as a comparison and - in this case - the first argument of it to \
+be [[not {value1}]].
+So, what can you do if you wanted to have variant 2 here? In this case there is the option of moving the not to the appropriate position:
+[{value1} is not {value2}]
+
+But this only works for the comparison expression. The general way of solving situations where it might be unclear of how to resolve an expression is to use brackets:
+[not ({value1} is {value2})]
+
+This way, it is clear that the expression in brackets has to be evaluated first and then the result has to be negated.
+
