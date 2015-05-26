@@ -1,0 +1,5 @@
+[if devmode
+	say "You are in development mode."]
+
+You can use the [[devmode]] constant to check whether you are currently in developer mode. This allows you to do things that are nice for testing, \
+but should not appear when for the normal player.
