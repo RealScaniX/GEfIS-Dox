@@ -11,12 +11,39 @@ The client uses the following third party libraries or extensions:
 The following passages might contain spoilers! Only read if you've already played the game.
 </div>
 
-!GEfIS One
-The game uses music by Kevin MacLeod.
-It also uses ambience tracks and sound effects by Alexander M. Loitsch originally done for the Iden soundtrack.
-(The exact track list will follow when the list is final)
- 
-<b>Additional sound effects</b>
+!<a name="gefis_one">GEfIS One</a>
+
+<b>Musical Score</b>
+Kevin MacLeod offers countless music tracks on his site, that can be used for all kinds of projects. I've already found a lot of cool tracks for my previous \
+game projects and now I am using them for this one as well. Thanks for doing this, Kevin! :)
+The soundtrack is available on music tapes... erm... <b>has been</b> available on music tapes.
+Well, you can still find the music on <a href="http://incompetech.com/" target="__blank">Kevin MacLeod's website</a>.
+The music is used under the <a href="http://creativecommons.org/licenses/by/3.0/" target="__blank">creative commons</a> license.
+
+<b>Kevin MacLeod's tracks</b> (in order of appearance as far as possible)
+<ul><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100577">"Quinn's Song - First Night"</a>
+The scary ambience track with the haunting melody
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500024">"Infinite Perspective"</a>
+The chilling music in the alternative entry hall
+</li><li><a target="_blank" href="http://freepd.com/Cinematic/Lomoto Perpetuo Loop">"Lomoto Perpetuo Loop"</a>
+Fighting the dark spark sounds like this
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500009">"Urban Gauntlet"</a>
+Played during other encounters
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/?keywords=thingee">"I Feel You"</a>
+A music tape
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500035">"Universal"</a>
+A music tape
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400047">"Anguish"</a>
+The mysterious music in the garden
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100578">"Quinn's Song - A new Man"</a>
+The reprise of the haunting melody before the final fight
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500033">"Motherlode"</a>
+The final fight
+</li><li><a target="_blank" href="http://incompetech.com/music/royalty-free/index.html?keywords=Hero+Down&Search=Search">"Hero Down"</a>
+Embracing the memory
+</li></ul>
+
+<b>Sound effects</b> (in random order)
 <ul><li>A modified version of the "Grandfather clock ticks" by Daveincamas.
 The original version can be found at <a href="http://www.freesound.org/people/daveincamas/sounds/27077/" target="_blank">Freesound.org</a>.
 </li><li>"vibrator 26.1.11" by Toiletrolltube.
@@ -30,3 +57,6 @@ The original version can be found at <a href="https://www.freesound.org/people/r
 </li><li>A modified version of "The Rustle of a Bush" by Montacue.
 The original version can be found at <a href="https://www.freesound.org/people/Montacue/sounds/178615/" target="_blank">Freesound.org</a>.
 </li></ul>
+
+The game also features ambience tracks and sound effects by Alexander M. Loitsch originally done for the soundtrack of Iden.
+ 

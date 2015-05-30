@@ -1,6 +1,6 @@
 xxx[there is a|an {ENTITYTYPE} called {NAME}
 	(this|it is static)
-	(this|it is private)
+	(this|it is hidden)
 	(its|his {PARENTATTRIBUTENAME} is|are {NEWDEFAULTVALUE})
 ]
 
