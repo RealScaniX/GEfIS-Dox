@@ -14,6 +14,12 @@ Note: This happens before anything else, so you will not be able to use any expr
 [\[no line break\]]
 If your %say% text is ending with a period ([[.]]), but you don't want a line break.
 
+!No adjustment / Escape
+[\[\\]]
+Disables default adjustments:
+In front of a character that normally would be changed to uppercase, e.g. at the beginning of a quote or the start of a line.
+After a period or other punctuation mark that would normally lead to a line break.
+
 !A|an
 [\[a|an\]]
 
