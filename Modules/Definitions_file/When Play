@@ -1,0 +1,16 @@
+!When play begins or resumes
+[when play|game begins|starts or resumes|continues]
+This is the init script, it is executed before everything else. It is processed for a new game and for a loaded game.
+
+!When play begins
+[when play|game begins|starts]
+Executed just before the game begins, but not after a game is loaded.
+
+!When play resumes
+[when play|game resumes|continues]
+Executed just before the game resumes, but not after a new game is started.
+ 
+!When play ends
+[when play|game ends|finishes]
+Executed when the game ends, usually after a [[end game]] statement.
+
