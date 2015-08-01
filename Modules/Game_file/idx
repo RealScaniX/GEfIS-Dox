@@ -1,1 +1,9 @@
-xxx
+The game file starts with a %module name%. Its filename ends with ".game".
+ 
+A game file contains:
+- %When Play% statements
+- %Includes%
+- %Resources%
+ 
+It also contains the %mode% to start the game with in the following form:
+[it starts with {MODENAME} mode]

@@ -1,4 +1,14 @@
-xxx[add resource "{URL}" as "{NAME}"]
+[add resource "{URL}" as "{NAME}"]
  
 This will add a resource (image, audio file, video or text) to the game that you can then use in the game.
 The URL has to start with "http://".
+ 
+[add resource "http://www.somehost.com/someimage.png" as "mylogo"]
+Will add the resource "mylogo", which can then be used in [[image]] %preprocessors%.
+ 
+[add resource "http://www.somehost.com/somemusic.ogg" as "intromusic"]
+Will add the resource "intromusic", which can then be used in %audio% statements.
+ 
+[add resource "http://www.somehost.com/mystyle.css" as "mystyle"]
+Will add the resource "mystyle", which can then be used in %stylesheet% statements.
+ 

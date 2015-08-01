@@ -1,1 +1,21 @@
-xxx
+!Play
+[play|loop {RESOURCENAME} on audio channel {CHANNELNAME} (with volume {VOLUME})]
+
+Starts the audio resource [[{RESOURCENAME}]] on the audio channel [[{CHANNELNAME}]] ("music", "ambient" or "sound") at the beginning and plays it with the given volume [[{VOLUME}]] (1 - 100).
+If [[loop]] is used, the audio file is looped.
+ 
+!Pause
+[pause audio channel {CHANNELNAME}]
+
+Pauses the audio channel, so it can be resumed later on.
+
+!Resume 
+[resume audio channel {CHANNELNAME} (with volume {VOLUME})]
+
+Resumes the audio file at the position it has been paused at.
+This can also be used on a currently playing audio channel to only change the volume.
+
+!Stop 
+[stop audio channel {CHANNELNAME}]
+
+Stops the audio on the given channel and resets the play position to the beginning.

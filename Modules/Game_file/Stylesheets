@@ -1,0 +1,2 @@
+[uses stylesheet {RESOURCENAME}]
+You can use your own stylesheets if you add the corresponding .css files using the %resources% management and then load it in the %game file%.

@@ -1,1 +1,4 @@
-xxx!Include
+[uses {MODULENAME} by {AUTHOR}]
+
+Includes the module that matches the given [[{MODULENAME}]] AND [[{AUTHOR}]] in its %module name%.
+

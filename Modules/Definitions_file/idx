@@ -1,0 +1,10 @@
+A definition file starts with a %module name%. Its filename ends with ".def", ".defs", ".definition" or ".gefis".
+ 
+A definitions file contains:
+- %Actions% and %Functions%
+- %Entities%
+- %EntityTypes%
+- %Modes%
+- %When Play% statements
+- %Includes%
+

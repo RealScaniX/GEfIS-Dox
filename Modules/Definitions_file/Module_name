@@ -1,0 +1,4 @@
+[This is {NAME} by {AUTHOR}]
+ 
+The module name defines a name and author which can later be used to include or reference this module.
+This is used in the %game file% and the %definitions file%. A similar format is used for %modes% as well.
